@@ -1,0 +1,66 @@
+.fa-fighter-jet{
+    font-size: 200px
+}
+
+.fa-suitcase{
+    font-size: 180px
+}
+
+.form_popup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form_container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form_container input[type=text], .form_container input[type=email], .form_container input[type=tel]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.form_container input[type=text]:focus, .form_container input[type=email]:focus, .form_container input[type=tel]:focus{
+    background-color: #dddddd;
+    outline: none;
+}
+
+.form_container .btn{
+    background-color: #149dff;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form_container .cancel{
+    background-color: red;
+}
+
+.form_container .btn:hover{
+    opacity: 1;
+}
+
+h1{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+a, h2, button{
+    font-family: 'Oswald', monospace;
+}
+
+p, label, input{
+    font-family: 'Roboto Mono', sans-serif;
+}
