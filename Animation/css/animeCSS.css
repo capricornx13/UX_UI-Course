@@ -1,0 +1,11 @@
+/*.AF{
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 600;
+  }*/
+  
+  .AF .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

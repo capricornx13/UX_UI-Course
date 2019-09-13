@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>U.S. Air Force</title>
+        <meta charset="utf-8">
+        <!--scalability-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--links to css and icons-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/afcss.css">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oswald|Roboto+Mono&display=swap" rel="stylesheet">
+        <!--styles-->
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class="w3-top">
+            <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-opacity">Home</a>
+                <a href="#gateway" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-animate-opacity">Gateway</a>
+                <a href="#welcome" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-animate-opacity">BMT Video</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-animate-opacity" onclick="openForm()">Get Info</a>
+            </div>
+
+            <!--Navbar for small screens-->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="#gateway" class="w3-bar-item w3-button w3-padding-large">Gateway</a>
+                <a href="#welcome" class="w3-bar-item w3-button w3-padding-large">BMT Video</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large">Get Info</a>
+            </div>
+        </div>
+
+        <!--Header-->
+        <header class="w3-container w3-center" style="padding: 128px 16px; background-image: url(./images/active-angry-army-279991.jpg); background-repeat: no-repeat;background-size: cover">
+                <h1 id="AfTitle" class="w3-margin w3-jumbo w3-text-blue w3-animate-bottom" style="text-shadow: 3px 3px 2px black">U.S. Air Force Basic Military Training</h1>
+        </header>
+
+        <!--First Grid-->
+        <div class="w3-row-padding w3-padding-64 w3-container" id="gateway">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h1>Gateway to the Air Force</h1>
+                    <p class="w3-text-blue-grey">Your career in the Air Force officially begins with Basic Military Training (BMT). It is a challenging experience both mentally and physically but will ultimately transform you from humble recruit to confident Airman with the skills and confidence you need to excel as a member of the U.S. Air Force.</p>
+                </div>
+                <div class="w3-third w3-center w3-jumbo">
+                    <i class="fa fa-fighter-jet w3-padding-64 w3-text-blue" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!--Second Grid-->
+        <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="welcome">
+                <div class="w3-content">
+                    <div class="w3-third w3-center w3-jumbo">
+                            <i class="fa fa-suitcase w3-padding-64 w3-text-blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="w3-twothird">
+                        <h1>Your Journey Begins</h1>
+                        <iframe id="video" width="100%" height="394" src="https://www.youtube.com/embed/e9Gc3uPz3y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        <div class="form_popup" id="myForm">
+            <form class="form_container" action="" target="_self" method="POST">
+                <h2>Enter your contact information to learn more.</h2>
+                <label for="name"><b>Name:</b></label>
+                <input type="text" placeholder="Name" name="name" required>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Email" name="email" required>
+                <label for="phone"><b>Phone Number:</b></label>
+                <input type="tel" placeholder="555-5555" name="phone">
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script src="./js/afjs.js"></script>
+    </body>
+</html>
