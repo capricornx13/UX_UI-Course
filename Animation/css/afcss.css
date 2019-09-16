@@ -68,3 +68,7 @@ p, label, input{
 .w3-animate-bottom{
     animation-duration: 800000;
 }
+
+.fa-fighter-jet{
+    cursor: pointer;
+}
